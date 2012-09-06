@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>When You're Not Looking</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="styles/default.css"             rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">When You're Not Looking</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>It happens when you're not looking <small>You know it does</small></h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+            <h2>The Experiment</h2>
+                <button class="btn primary" onclick="captureToCanvas()">Start</button>
+                <br>
+                <br>
+              	<object  id="iembedflash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240">
+              		<param name="movie" value="camcanvas.swf" />
+              		<param name="quality" value="high" />
+            		<param name="allowScriptAccess" value="always" />
+              		<embed  allowScriptAccess="always"  id="embedflash" src="camcanvas.swf" quality="high" width="320" height="240" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" mayscript="true"  />
+              	</object>
+              	<canvas style="border:1px solid yellow"  id="canvas" width="320" height="240"></canvas>
+          </div>
+          <div class="span4">
+            <h3>What is it?</h3>
+            
+            <p>
+                This experiment uses HTML5 canvas and javascript to perform face recognition in order to display
+                a different banner when a user is looking at it. Allow access to the camera then click "Start".
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2011 <a href="http://geoffreytran.com" title="Geoffrey Tran">Geoffrey Tran</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+    <script type="text/javascript" src="scripts/face.js"></script>
+    <script type="text/javascript" src="scripts/ccv.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    
+  </body>
+</html>
